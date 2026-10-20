@@ -37,12 +37,12 @@ class Module extends WitalsModule
 
     protected function registerDashboardScreens(): void
     {
-        if (!$this->app->has(\PrestoWorld\Foundation\Admin\DashboardScreenRegistryInterface::class)) {
+        if (!$this->app->has(\PrestoWorld\Contracts\Admin\Dashboard\DashboardScreenRegistryInterface::class)) {
             return;
         }
 
-        $registry = $this->app->make(\PrestoWorld\Foundation\Admin\DashboardScreenRegistryInterface::class);
-        if (!$registry instanceof \PrestoWorld\Foundation\Admin\DashboardScreenRegistryInterface) {
+        $registry = $this->app->make(\PrestoWorld\Contracts\Admin\Dashboard\DashboardScreenRegistryInterface::class);
+        if (!$registry instanceof \PrestoWorld\Contracts\Admin\Dashboard\DashboardScreenRegistryInterface) {
             return;
         }
 
