@@ -1,22 +1,23 @@
 {
-  "name": "omnichannel",
-  "version": "1.0.0",
-  "description": "Omnichannel messaging center - Unified messaging hub for sellers and customers",
-  "type": "feature",
-  "enabled": true,
-  "priority": 10,
-  "namespace": "PrestoWorld\\Modules\\Omnichannel",
-  "entry": "Module.php",
-  "dependencies": {
-    "php": "^8.1"
-  },
-  "provides": [
-    "omnichannel.chat_order_center",
-    "omnichannel.user_messenger"
-  ],
-  "autoload": {
-    "psr-4": {
-      "PrestoWorld\\Modules\\Omnichannel\\": "src/"
+    "$schema": "https://prestoworld.pages.dev/schemas/module-manifest/v1.json",
+    "name": "omnichannel",
+    "version": "1.0.0",
+    "description": "Omnichannel messaging center - Unified messaging hub for sellers and customers",
+    "type": "feature",
+    "enabled": true,
+    "priority": 10,
+    "namespace": "PrestoWorld\\Modules\\Omnichannel",
+    "entry": "Module.php",
+    "dependencies": {
+        "php": "^8.1"
+    },
+    "provides": [
+        "omnichannel.chat_order_center",
+        "omnichannel.user_messenger"
+    ],
+    "autoload": {
+        "psr-4": {
+            "PrestoWorld\\Modules\\Omnichannel\\": "src/"
+        }
     }
-  }
 }
